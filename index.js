@@ -27,7 +27,7 @@ function removeLastKitten(){
   return kittens.slice(0, (kittens.length - 1))
 }
 
-function appendKitten(){
+function appendKitten(kitten){
   var kittens = ['Milo', 'Otis', 'Garfield']
   return kittens.concat(kitten)
 }
