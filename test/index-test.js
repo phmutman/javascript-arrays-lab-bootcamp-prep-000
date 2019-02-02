@@ -67,10 +67,10 @@ describe('Arrays', function() {
     })
   })
 
-  describe('removeFirstKitten(kittens)', function() {
+  describe('removeFirstKitten(name)', function() {
     it('removes the first kitten from the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       window.kittens = ['Milo', 'Otis', 'Garfield'];
-      expect(removeFirstKitten(kittens)).toEqual(["Otis", "Garfield"])
+      expect(removeFirstKitten(name)).toEqual(["Otis", "Garfield"])
 
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
     })
