@@ -22,19 +22,19 @@ describe('Arrays', function() {
     })
   })
 
-  describe('destructivelyRemoveLastKitten()', function() {
+  describe('destructivelyRemoveLastKitten(kittens)', function() {
     it('removes the last kitten from the kittens array', function() {
       window.kittens = ['Milo', 'Otis', 'Garfield'];
-      destructivelyRemoveLastKitten()
+      destructivelyRemoveLastKitten(kittens)
 
       expect(window.kittens).toEqual(["Milo", "Otis"])
     })
   })
 
-  describe('destructivelyRemoveFirstKitten()', function() {
+  describe('destructivelyRemoveFirstKitten(kittens)', function() {
     it('removes the First kitten from the kittens array', function() {
       window.kittens = ['Milo', 'Otis', 'Garfield'];
-      destructivelyRemoveFirstKitten()
+      destructivelyRemoveFirstKitten(kittens)
 
       expect(window.kittens).toEqual(["Otis", "Garfield"])
     })
