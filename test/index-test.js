@@ -25,7 +25,7 @@ describe('Arrays', function() {
   describe('destructivelyRemoveLastKitten(kittens)', function() {
     it('removes the last kitten from the kittens array', function() {
       window.kittens = ['Milo', 'Otis', 'Garfield'];
-      destructivelyRemoveLastKitten(kittens)
+      destructivelyRemoveLastKitten()
 
       expect(window.kittens).toEqual(["Milo", "Otis"])
     })
@@ -34,7 +34,7 @@ describe('Arrays', function() {
   describe('destructivelyRemoveFirstKitten(kittens)', function() {
     it('removes the First kitten from the kittens array', function() {
       window.kittens = ['Milo', 'Otis', 'Garfield'];
-      destructivelyRemoveFirstKitten(kittens)
+      destructivelyRemoveFirstKitten()
 
       expect(window.kittens).toEqual(["Otis", "Garfield"])
     })
@@ -61,7 +61,7 @@ describe('Arrays', function() {
   describe('removeLastKitten(kittens)', function() {
     it('removes the last kitten in the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       window.kittens = ['Milo', 'Otis', 'Garfield'];
-      expect(removeLastKitten(kittens)).toEqual(["Milo", "Otis"])
+      expect(removeLastKitten()).toEqual(["Milo", "Otis"])
 
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
     })
@@ -70,7 +70,7 @@ describe('Arrays', function() {
   describe('removeFirstKitten(name)', function() {
     it('removes the first kitten from the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       window.kittens = ['Milo', 'Otis', 'Garfield'];
-      expect(removeFirstKitten(kittens)).toEqual(["Otis", "Garfield"])
+      expect(removeFirstKitten()).toEqual(["Otis", "Garfield"])
 
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
     })
