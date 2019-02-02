@@ -27,7 +27,7 @@ function appendKitten(kitten){
 }
 
 function prependKitten(kitten){
-  return ([kitten,...["Arnold", "Milo", "Otis", "Garfield"]])
+  return ([kitten,...["Milo", "Otis", "Garfield"]])
 }
 
 function removeFirstKitten(kittens){
