@@ -8,7 +8,6 @@ function destructivelyAppendKitten(){
 }
 
 function destructivelyPrependKitten(){
-  var kittens = ['Milo', 'Otis', 'Garfield']
   return kittens.unshift("Bob")
 }
 
